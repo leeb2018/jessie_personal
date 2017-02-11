@@ -1,0 +1,19 @@
+{
+  "name": "jessie_personal",
+  "version": "1.0.0",
+  "description": "Personal website for Jessie :)",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeb2018/jessie_personal.git"
+  },
+  "author": "ByeongChan Luke Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeb2018/jessie_personal/issues"
+  },
+  "homepage": "https://github.com/leeb2018/jessie_personal#readme"
+}
