@@ -1,51 +1,245 @@
 
 <head>
   <meta charset="utf-8"/>
-  <title>Jessie J</title>
+  <title>Jessie Jeong</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
   <script src="js/jquery.fullPage.js"></script>
   <link rel="stylesheet" type-"text/css" href="css/main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gudea:400,700|Libre+Baskerville" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/3e8db64afa.js"></script>
   <script>
   $(document).ready(function() {
     $('#fullpage').fullpage({
-      anchors:['introduction', 'experience', 'contact'],
-      normalScrollElementTouchThreshold: 3
+      anchors:['home', 'introduction', 'experience', 'contact'],
+      normalScrollElementTouchThreshold: 4
     });
   });
   </script>
 </head>
 <body>
-	<div id="fullpage">
-		<div class="section" id="intro" data-anchor="introduction">
-      Some section
+  <nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand" href="#home"><img class="logo" src="img/logo_black.png"/></a>
     </div>
-    <div class="section" id="experiend_proj" data-anchor="experience">
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="jumper" href="#introduction">Intro.</a></li>
+        <li><a class="jumper" href="#experience">Experience</a></li>
+        <li><a class="jumper" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+  </nav>
+	<div id="fullpage">
+    <div class="section main_section fp-responsive" id="home" data-anchor="home">
+      <div class="main_table">
+        <p id="hey" style="text-align:center">Hey, I'm</p>
+        <p id="name" style="text-align:center">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          JESSIE JEONG.
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </p>
+      </div>
+      <footer class="text-center">
+        <a href="#introduction" id="scroll_down" >
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </a>
+      </footer>
+
+    </div>
+		<div class="section intro_section fp-responsive" id="intro" data-anchor="introduction">
+      <div class="intro_table">
+        <h1 class="intro_name">Jessie Jeong</h1>
+        <hr class="hr">
+        <div class="intro_contents">
+          <h3 class="description">
+            I am a student at MGIMO, studying International Relations.
+            I graduated from University of Pennsylvania with a BA degree on
+            Classical Studies.
+          </h3>
+          <div class="intro_bullets">
+            <p class="intro_bullet">
+              <i class="fa fa-book" aria-hidden="true"></i> I am a student.
+            </p>
+            <p class="intro_bullet">
+              <i class="fa fa-music" aria-hidden="true"></i> I am a dancer.
+            </p>
+            <p class="intro_bullet">
+              <i class="fa fa-binoculars" aria-hidden="true"></i> I am an adventurer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section exp_section fp-responsive" id="experiend_proj" data-anchor="experience">
     	<div class="slide" id="slide1">
         <div class="content">
-          <h1>Slide 1</h1>
+          <div class="wrapper">
+            <div class="img_wrapper">
+              <img class="logo_img" src="img/rosneft_logo2.png" align="middle"/>
+            </div>
+          </div>
+          <div class="exp_description">
+            <h1 class="place">Rosneft</h1>
+            <h3 class="position">Summer Intern</h3>
+            <p class="duration">
+              May 2014 - Jun 2014
+            </p>
+            <ul class="exp_bullets">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque, a condimentum tortor congue nec.
+                In in tristique.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 	    <div class="slide" id="slide2">
         <div class="content">
-          <h1>Slide 2</h1>
+          <div class="wrapper">
+            <div class="img_wrapper">
+              <img class="logo_img" src="img/mk_logo.png" align="middle"/>
+            </div>
+          </div>
+          <div class="exp_description">
+            <h1 class="place">Maeil Business Newspaper</h1>
+            <h3 class="position">Summer Intern</h3>
+            <p class="duration">
+              May 2013/14 - Jun 2013/14
+            </p>
+            <ul class="exp_bullets">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque, a condimentum tortor congue nec.
+                In in tristique.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 	    <div class="slide" id="slide3">
         <div class="content">
-          <h1>Slide 3</h1>
+          <div class="wrapper">
+            <div class="img_wrapper">
+              <img class="logo_img" src="img/gensler_logo.png" align="middle"/>
+            </div>
+          </div>
+          <div class="exp_description">
+            <h1 class="place">Gensler</h1>
+            <h3 class="position">Marketing Intern</h3>
+            <p class="duration">
+              May 2012 - Jun 2012
+            </p>
+            <ul class="exp_bullets">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque, a condimentum tortor congue nec.
+                In in tristique.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 	    <div class="slide" id="slide4">
         <div class="content">
-          <h1>Slide 4</h1>
+          <div class="wrapper">
+            <div class="img_wrapper">
+              <img class="logo_img" src="img/shinyoung_logo.png" align="middle"/>
+            </div>
+          </div>
+          <div class="exp_description">
+            <h1 class="place">Shinyoung Securities</h1>
+            <h3 class="position">Summer Intern</h3>
+            <p class="duration">
+              May 2011 - Aug 2011
+            </p>
+            <ul class="exp_bullets">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque, a condimentum tortor congue nec.
+                In in tristique.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed laoreet dolor neque.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section" id="cont" data-anchor="contact">
-      Some section
+    <div class="section contact_section fp-responsive" id="cont" data-anchor="contact">
+      <div class="contact_wrapper">
+        <div class="contact">
+          <h1 class="contact_header">Contact Jessie</h1>
+          <hr class="hr">
+          <form action="mailto:jessiejeong37@gmail.com" method="post" enctype="text/plain" >
+            <p class="person_name">Name</p>
+            <input type="text" class="form-control" name="FirstName" placeholder="Name">
+            <p class="person_email">Email Address</p>
+            <input type="text" class="form-control" name="Email" placeholder="Email"><br />
+            <input type="submit" name="submit" class="btn send_email_btn" value="Submit">
+        </div>
+        <div class="other_contacts">
+          <div class="contacts instagram">
+            <a class="contact_link" href="https://www.instagram.com/">
+              <i class="fa fa-instagram contact_icon" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="contacts linkedin">
+            <a class="contact_link" href="https://www.linkedin.com/in/jessie-jeong-536a13108/">
+              <i class="fa fa-linkedin-square contact_icon" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="contacts facebook">
+            <a class="contact_link" href="https://www.facebook.com/">
+              <i class="fa fa-facebook-square contact_icon" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="contacts resume">
+            <a class="contact_link" href="file/demo-cv.pdf">
+              <i class="fa fa-file-text-o contact_icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 	</div>
 </body>
