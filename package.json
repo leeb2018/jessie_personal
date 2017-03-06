@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leeb2018/jessie_personal/issues"
   },
-  "homepage": "https://github.com/leeb2018/jessie_personal#readme"
+  "homepage": "https://github.com/leeb2018/jessie_personal#readme",
+  "scripts": {
+   "start": "node app"
+  }
 }
