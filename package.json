@@ -4,7 +4,7 @@
   "description": "Personal website for Jessie :)",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
     "url": "https://github.com/leeb2018/jessie_personal/issues"
   },
   "homepage": "https://github.com/leeb2018/jessie_personal#readme",
-  "scripts": {
-   "start": "node app"
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.1"
   }
 }
